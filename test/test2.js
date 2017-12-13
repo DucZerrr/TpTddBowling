@@ -1,4 +1,4 @@
-describe("BowlingGame2", function() {
+/*describe("BowlingGame2", function() {
 	var game2;
 
 	
@@ -6,10 +6,10 @@ describe("BowlingGame2", function() {
 		game2 = new BowlingGame();
 	});
 
-	it("should handle all ones", function() {
-		game2.rollMany(20, 1);
-		expect(game2.score()).to.equal(20);
+	it("", function() {
+		fail();
 	});
 
 
 });
+*/
