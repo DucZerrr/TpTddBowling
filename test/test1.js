@@ -1,13 +1,13 @@
-describe("BowlingGame", function() {
-	var game;
+describe("BowlingGame1", function() {
+	var game1;
 
 	
 	beforeEach(function(){
-		game = new BowlingGame();
+		game1 = new BowlingGame1();
 	});
 
-	it("should handle gutter game", function() {
-		game.rollMany(20, 0);
-		expect(game.score()).to.equal(0);
+	it("should handle gutter game1", function() {
+		game1.rollMany(20, 0);
+		expect(game1.score()).to.equal(0);
 	});
 });

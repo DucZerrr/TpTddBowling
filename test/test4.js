@@ -1,18 +1,18 @@
-describe("BowlingGame", function() {
-	var game;
+describe("BowlingGame4", function() {
+	var game4;
 
 	
 	beforeEach(function(){
-		game = new BowlingGame();
+		game4 = new BowlingGame4();
 	});
 
 
 	it("should handle one strike", function() {
-		game.rollStrike();
-		game.roll(3);
-		game.roll(4);
-		game.rollMany(16, 0);
-		expect(game.score()).to.equal(24);
+		game4.rollStrike();
+		game4.roll(3);
+		game4.roll(4);
+		game4.rollMany(16, 0);
+		expect(game4.score()).to.equal(24);
 	});
 
 

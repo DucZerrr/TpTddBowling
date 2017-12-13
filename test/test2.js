@@ -1,14 +1,14 @@
-describe("BowlingGame", function() {
-	var game;
+describe("BowlingGame2", function() {
+	var game2;
 
 	
 	beforeEach(function(){
-		game = new BowlingGame();
+		game2 = new BowlingGame2();
 	});
 
 	it("should handle all ones", function() {
-		game.rollMany(20, 1);
-		expect(game.score()).to.equal(20);
+		game2.rollMany(20, 1);
+		expect(game2.score()).to.equal(20);
 	});
 
 

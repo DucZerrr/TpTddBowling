@@ -1,17 +1,17 @@
-describe("BowlingGame", function() {
-	var game;
+describe("BowlingGame3", function() {
+	var game3;
 
 	
 	beforeEach(function(){
-		game = new BowlingGame();
+		game3 = new BowlingGame3();
 	});
 
 
 	it("should handle one spare", function() {
-		game.rollSpare();
-		game.roll(3);
-		game.rollMany(17, 0);
-		expect(game.score()).to.equal(16);
+		game3.rollSpare();
+		game3.roll(3);
+		game3.rollMany(17, 0);
+		expect(game3.score()).to.equal(16);
 	});
 
 });
