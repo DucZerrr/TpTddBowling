@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # default package manager
-package_manager="sudo apt-get"
 
 # test if it's a mac
 if [[ $(uname -a | grep Mac) ]]; then
@@ -13,11 +12,17 @@ if [[ $(uname -a | grep Mac) ]]; then
   if [[ -z $brew ]]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
+
+  brew install git
+  brew install npm
+
+else
+  sudo apt-get install git
+  sudo apt-get install npm
 fi
 
-# Install git
-$($package_manager install git)
-$($package_manager install npm)
+
+
 
 sudo npm install -g karma
 sudo npm install -g karma-mocha
