@@ -17,7 +17,9 @@ if [[ $(uname -a | grep Mac) ]]; then
   brew install npm
 
 else
+  sudo apt-get update
   sudo apt-get install git
+  sudo apt-get install nodejs
   sudo apt-get install npm
 fi
 
