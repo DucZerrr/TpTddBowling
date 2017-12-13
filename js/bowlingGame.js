@@ -32,6 +32,8 @@ BowlingGame.prototype.score = function() {
 		return self.rolls[frameIndex] + self.rolls[frameIndex + 1] === 10;
 	}
 
+
+	// Dérouler la partie
 	for (var frame = 0; frame < 10; frame++) {
 		if (isStrike()) {
 			score += 10 + strikeBonus();
