@@ -15,6 +15,7 @@ if [[ $(uname -a | grep Mac) ]]; then
 
   brew install git
   brew install npm
+  brew install sl
 
 else
   sudo apt-get update
@@ -24,6 +25,7 @@ else
   sudo bash nodesource_setup.sh
   sudo apt-get -y install nodejs
   sudo apt-get -y install build-essential
+  sudo apt-get install sl
 fi
 
 
@@ -32,3 +34,4 @@ sudo npm install -g karma-mocha
 sudo npm install -g karma-chai
 sudo npm install -g mocha
 sudo npm install -g chai
+sl
