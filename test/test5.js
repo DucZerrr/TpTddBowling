@@ -9,7 +9,7 @@ describe("BowlingGame", function() {
 
 
 	it("should handle a perfect game", function() {
-		rollMany(12, 10);
+		game.rollMany(12, 10);
 		expect(game.score()).to.equal(300);
 	});
 });

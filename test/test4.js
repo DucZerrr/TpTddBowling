@@ -8,10 +8,10 @@ describe("BowlingGame", function() {
 
 
 	it("should handle one strike", function() {
-		rollStrike();
+		game.rollStrike();
 		game.roll(3);
 		game.roll(4);
-		rollMany(16, 0);
+		game.rollMany(16, 0);
 		expect(game.score()).to.equal(24);
 	});
 

@@ -8,9 +8,9 @@ describe("BowlingGame", function() {
 
 
 	it("should handle one spare", function() {
-		rollSpare();
+		game.rollSpare();
 		game.roll(3);
-		rollMany(17, 0);
+		game.rollMany(17, 0);
 		expect(game.score()).to.equal(16);
 	});
 

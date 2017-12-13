@@ -7,7 +7,7 @@ describe("BowlingGame", function() {
 	});
 
 	it("should handle all ones", function() {
-		rollMany(20, 1);
+		game.rollMany(20, 1);
 		expect(game.score()).to.equal(20);
 	});
 

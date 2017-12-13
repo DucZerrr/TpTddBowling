@@ -7,7 +7,7 @@ describe("BowlingGame", function() {
 	});
 
 	it("should handle gutter game", function() {
-		rollMany(20, 0);
+		game.rollMany(20, 0);
 		expect(game.score()).to.equal(0);
 	});
 });
