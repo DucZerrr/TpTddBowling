@@ -3,12 +3,12 @@ describe("BowlingGame5", function() {
 
 	
 	beforeEach(function(){
-		game5 = new BowlingGame5();
+		game5 = new BowlingGame();
 	});
 
 
-
-	it(, function() {
-
+	it("should handle a perfect game", function() {
+		game5.rollMany(12, 10);
+		expect(game5.score()).to.equal(300);
 	});
 });

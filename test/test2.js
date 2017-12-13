@@ -3,11 +3,12 @@ describe("BowlingGame2", function() {
 
 	
 	beforeEach(function(){
-		game2 = new BowlingGame2();
+		game2 = new BowlingGame();
 	});
 
-	it(, function() {
-		
+	it("should handle all ones", function() {
+		game2.rollMany(20, 1);
+		expect(game2.score()).to.equal(20);
 	});
 
 

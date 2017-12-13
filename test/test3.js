@@ -3,12 +3,15 @@ describe("BowlingGame3", function() {
 
 	
 	beforeEach(function(){
-		game3 = new BowlingGame3();
+		game3 = new BowlingGame();
 	});
 
 
-	it(, function() {
-		
+	it("should handle one spare", function() {
+		game3.rollSpare();
+		game3.roll(3);
+		game3.rollMany(17, 0);
+		expect(game3.score()).to.equal(16);
 	});
 
 });
