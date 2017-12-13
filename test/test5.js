@@ -8,8 +8,7 @@ describe("BowlingGame5", function() {
 
 
 
-	it("should handle a perfect game5", function() {
-		game5.rollMany(12, 10);
-		expect(game5.score()).to.equal(300);
+	it(, function() {
+
 	});
 });

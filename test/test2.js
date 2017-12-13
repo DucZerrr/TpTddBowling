@@ -6,9 +6,8 @@ describe("BowlingGame2", function() {
 		game2 = new BowlingGame2();
 	});
 
-	it("should handle all ones", function() {
-		game2.rollMany(20, 1);
-		expect(game2.score()).to.equal(20);
+	it(, function() {
+		
 	});
 
 
