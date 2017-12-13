@@ -1,33 +1,40 @@
 // Karma configuration
-// Generated on Thu Feb 13 2014 16:25:26 GMT+0100 (CET)
+// Generated on Wed Dec 13 2017 21:24:54 GMT+0100 (CET)
 
 module.exports = function(config) {
   config.set({
 
-    // base path, that will be used to resolve files and exclude
+    // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
 
     // frameworks to use
-    frameworks: ['mocha', 'chai'],
+    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
+    frameworks: ['mocha','chai'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'js/**/*.js',
-      'test/**/*.js'
+      'js/*.js',
+      'test/*.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      
     ],
 
 
+    // preprocess matching files before serving them to the browser
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    preprocessors: {
+    },
+
+
     // test results reporter to use
-    // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress', 'osx'],
+    // possible values: 'dots', 'progress'
+    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
+    reporters: ['progress'],
 
 
     // web server port
@@ -47,23 +54,17 @@ module.exports = function(config) {
     autoWatch: true,
 
 
-    // Start these browsers, currently available:
-    // - Chrome
-    // - ChromeCanary
-    // - Firefox
-    // - Opera
-    // - Safari (only Mac)
-    // - PhantomJS
-    // - IE (only Windows)
-    browsers: ['Safari'],
-
-
-    // If browser does not capture in given timeout [ms], kill it
-    captureTimeout: 60000,
+    // start these browsers
+    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
-    // if true, it capture browsers, run tests and exit
-    singleRun: false
-  });
-};
+    // if true, Karma captures browsers, runs the tests and exits
+    singleRun: false,
+
+    // Concurrency level
+    // how many browser should be started simultaneous
+    concurrency: Infinity
+  })
+}
